@@ -20,12 +20,12 @@ const TodoItem = ({ id, title, completed }) => {
 				<span className={completed ? "through" : ""}>
 					<input
 						type='checkbox'
-						id='todo'
+						id={id}
 						className='list-checkbox'
 						checked={completed}
 						onChange={handleCheckboxClick}
 					></input>
-					<label for='todo'>{title}</label>
+					<label className='text' for={id}>{title}</label>
 				</span>
 				<button onClick={handleDeleteClick} className='delete'>
 					<FaTrashAlt color='red' size={20} />

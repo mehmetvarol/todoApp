@@ -15,7 +15,7 @@
                 align-items: center;
                 font-size: 18px;
                 color: #000;
-
+                
                 &.through {
                     text-decoration: line-through;
                     color: #ccc;
@@ -25,6 +25,9 @@
                     margin-right: 14px;
                     width: 18px;
                     height: 18px;
+                }
+                .text{
+                    cursor: pointer;
                 }
             }
 
